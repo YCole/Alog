@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="gpslog_preference_screen"
+    android:title="@string/gps_log_name" >
+
+    <ListPreference
+        android:defaultValue="@string/default_gps_path_value"
+        android:dialogTitle="@string/log_path_title"
+        android:entries="@array/log_path_list_preference"
+        android:entryValues="@array/log_path_value_list_preference"
+        android:key="save_log_path"
+        android:summary="@string/log_path_summary"
+        android:title="@string/log_path_title" />
+  
+</PreferenceScreen>

@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MTKLogger</string>
+    <string name="notification_title_network">Network log</string>
+    <string name="notification_title_mobile">Mobile log</string>
+    <string name="notification_title_modem">Modem log</string>
+    <string name="notification_title_met">MET log</string>
+    <string name="notification_title_gps">GPS log</string>
+    <string name="notification_title">MTKLogger 正在运行</string>
+    <string name="notification_on_summary_suffix">已打开.</string>
+    <string name="notification_on_summary_suffixes"> 已打开.</string>
+    <string name="notification_off_summary_suffix">已关闭.</string>
+    <string name="notification_off_summary_suffixes"> 已关闭.</string>
+    <string name="notification_nearly_out_of_storage">日志存储结束.</string>
+    <string name="notification_out_of_storage_summary">点击已获取更多信息.</string>
+    
+    <!-- Main UI -->
+    <string name="network_log_name">NetworkLog</string>
+    <string name="mobile_log_name">MobileLog</string>
+    <string name="modem_log_name">ModemLog</string>
+    <string name="modem_log_name1">ModemLog1</string>
+    <string name="modem_log_name2">ModemLog2</string>
+    <string name="modem_log_name3">ModemLog3</string>
+    <string name="modem_log_name4">ModemLog4</string>
+    <string name="modem_log_name5">ModemLog5</string>
+    <string name="modem_log_name6">ModemLog6</string>
+    <string name="modem_log_name7">ModemLog7</string>
+    <string name="modem_log_name8">ModemLog8</string>
+    
+    <string name="met_log_name">METLog</string>
+    <string name="gps_log_name">GPSLog</string>
+    <string name="dual_modem_log_name">DualModemLog</string>
+    <string name="ext_modem_log_name">ExtModemLog</string>
+    <string name="tag_log_name">TagLog</string>
+    <string name="menu_settings">设置</string>
+    <string name="mobilelog_unselected">mobilelog未成功启动,因为旗下未勾选任何日志类型!</string>
+    <string name="no_log_on">没有日志开启!</string>
+    <string name="log_path_str">日志路径</string>
+    <string name="log_used_storage">已用</string>
+    <string name="log_free_storage">空闲</string>
+    <string name="log_start"><xliff:g id="type">%s</xliff:g> 开始录制</string>
+    <string name="log_stop"><xliff:g id="type">%s</xliff:g> 停止录制</string>
+    <string name="log_unselected"><xliff:g id="type">%s</xliff:g>不可用</string>
+    <string name="time_default">0:00:00</string>
+    <string name="log_path_type_label_unknown">未知</string>
+    <string name="log_path_type_label_sd">SD卡</string>
+    <string name="log_path_type_label_emmc" product="tablet">内部存储</string>
+    <string name="log_path_type_label_emmc" product="default">手机存储</string>
+    <string name="log_path_type_label_modemlog_2_sd" product="default">仅 Modem Log 放于SD卡</string>
+    <string name="log_path_type_label_data">内置存储</string>
+    <string name="log_path_not_exist">存储路径<xliff:g id="logpath">%s</xliff:g>不存在!</string>
+    <string name="low_storage_warning_dialog_title">警告:空间不足</string>
+    <string name="low_storage_warning_dialog_msg">可用空间小于 
+        <xliff:g id="logpath">%d</xliff:g>M,请清理存储空间,否则将立即停止录制日志!</string>
+
+   	<string name="info_mokey_test_running">Monkey测试正在运行，无法启动/停止日志！</string>
+    <string name="info_not_device_owner">当前不是机主，无法启动/停止日志！</string>
+    <string name="start_log_confirm_dlg_title">开启日志警告</string>
+    <string name="message_start_log_confirm">日志将被保存到公共存储空间，它可能会导致隐私数据泄露，你确定仍然要开启日志吗？</string>
+    <string name="stop_log_confirm_dlg_title">停止日志警告</string>
+    <string name="message_stop_log_confirm">日志已保存在公共存储空间，请尽快删除，以防止隐私数据泄露！</string>
+    	<!-- Waiting dialog -->
+    <string name="waiting_dialog_title_start_log">开始录制</string>
+    <string name="waiting_dialog_message_start_log">等待开启录制...</string>
+    <string name="waiting_dialog_title_stop_log">停止录制</string>
+    <string name="waiting_dialog_message_stop_log">等待停止录制...</string>
+    <string name="waiting_dialog_title_restart_log">重启日志</string>
+    <string name="waiting_dialog_message_restart_log">等待重启日志...</string>
+    <string name="waiting_dialog_title_poll_log">导出日志</string>
+    <string name="waiting_dialog_message_poll_log">等待导出日志</string>
+    <string name="waiting_dialog_title_flush_log">导出日志</string>
+    <string name="waiting_dialog_message_flush_log">等待导出日志...</string>
+    <string name="waiting_service_dialog_message">等待日志初始化...</string>
+    <string name="waiting_checking_log_dialog_message">检查日志文件...</string>
+    
+    <!-- Settings -->
+    <string name="general_settings_title">一般设置</string>
+    <string name="advanced_settings_title">高级设置</string>
+    <string name="enable_tag_log_title">启用Tag Log</string>
+    <string name="enable_tag_log_summary">启用/禁用tag log功能</string>
+    <string name="enable_always_tag_modem_log_title">总是Tag Modem Log</string>
+    <string name="enable_always_tag_modem_log_summary">启用/禁用总是Tag Modem Log功能</string>
+    <string name="enable_exception_reporter_title">启用异常报告</string>
+    <string name="enable_exception_reporter_summary">启用/禁用异常报告</string>
+    <string name="enable_ui_debug_mode_title">启用UI调试模式</string>
+    <string name="enable_ui_debug_mode_summary">启用/禁用UI调试模式</string>
+    <string name="log_storage_location_title">日志存储路径</string>
+    <string name="run_exception_history">打开异常历史记录</string>
+    <string name="run_exception_history_summary">通过打开异常历史记录可以查看异常报告列表.</string>
+    <string name="warning_no_permission_for_setting">只有设备管理员可以修改日志配置信息.</string>
+    <string name="file_info_path">文件路径：</string>
+    <string name="file_info_modified_time">修改时间：</string>
+    <string name="file_info_size">文件大小：</string>
+    
+    <string name="limit_single_log_size_title">设置日志最大值(MB)</string>
+    <string name="limit_single_log_size_summary">日志达到设置的最大值时会自动删除当前日志</string>
+    <string name="limit_single_log_size_dialog_message"> 
+        <xliff:g id="log_type">%s</xliff:g>的容量应该在区间
+        <xliff:g id="min_size">%d</xliff:g>MB ~ 
+        <xliff:g id="max_size">%d</xliff:g>MB( 
+        <xliff:g id="store_type">%s</xliff:g>的容量).</string>
+    <string name="limit_total_log_size_title">总日志容量最大值(MB)</string>
+    <string name="limit_total_log_size_summary">总日志容量将不会超过这个最大值</string>
+    <string name="limit_total_log_size_dialog_message"> 
+        <xliff:g id="log_type">%s</xliff:g>总日志容量最大值应在区间 
+        <xliff:g id="max_size">%s</xliff:g>MB ~
+        <xliff:g id="max_size">%s</xliff:g>MB (
+        <xliff:g id="current_size">%s</xliff:g> 的整数倍 ). \n 注意：若所有log最大值之和大于内存值，可能出现空间被占满log停止。
+        </string>
+    <!-- metlog settings -->
+       <string name="enable_met_log_title">开启MET Log</string>
+    <string name="enable_met_log_summary">启用/禁用MET log功能</string>
+ 
+    <string name="metlog_settings">METLog 设置</string>
+   
+    <string name="limit_metlog_size_title">日志容量(MB per cpu)</string>
+    <string name="limit_metlog_size_summary">当达到日志最大容量时将会删除日志</string>
+    <string name="metlog_period_title">时间周期(ms)</string>
+    <string name="metlog_period_summary">设置 METLog时间周期</string>
+    
+    <string name="metlog_cpu_buffer_title">CPU缓存(KB)</string>
+    <string name="metlog_cpu_buffer_summary">设置METLog CPU缓存大小</string>
+        
+    <string name="metlog_heavy_load_recording_title">开启重载录制</string>
+    <string name="metlog_heavy_load_recording_summary">启用/禁用重载录制</string>
+    
+    <string name="limit_met_log_size_dialog_message">(每個cpu均有一份自己的log file, 此設定值會套用在各個CPU上)\n
+        <xliff:g id="log_type">%s</xliff:g>的容量应该在区间 
+        <xliff:g id="min_size">%d</xliff:g> MB ~ 
+        <xliff:g id="max_size">%d</xliff:g> MB.\n\n
+		最大总日志容量 = 日志容量 * CPU数量.\n
+		EX: 设定日志容量 = 100MB, CPU数量=8,那么最大总日志容量 = 100MB*8 = 800MB\n
+        </string>
+   
+   <string name="limit_period_dialog_message">
+        <xliff:g id="log_type">%s</xliff:g>的拼接持续时间周期应该在区间 
+        <xliff:g id="min_size">%d</xliff:g> ms ~ 
+        <xliff:g id="max_size">%d</xliff:g> ms.</string>
+        
+   <string name="limit_cpu_buffer_dialog_message">
+        <xliff:g id="log_type">%s</xliff:g>的跟踪缓存容量应该在区间 
+        <xliff:g id="min_size">%d</xliff:g> KB ~ 
+        <xliff:g id="max_size">%d</xliff:g> KB.</string>
+        
+   <!-- bluetooth log -->
+   <string name="enable_bt_log_title">打开蓝牙日志工具</string>
+   <string name="enable_bt_log_summary">进入蓝牙日志设置界面</string>   
+      
+    <!-- Wi-Fi log tool -->
+   <string name="open_wifi_log_tool_title">打开Wi-Fi日志工具</string>
+    <string name="open_wifi_log_tool_summary">进入Wi-Fi日志设置界面</string>
+   
+    <!-- GPS Log Setting -->
+    <string name="enable_gpslog">启用GPS Log</string>
+    <string name="enable_gps_log_summary">启用/禁用GPS log功能</string>
+    <string name="gpslog_settings">GPSLog设置</string>
+    <string name="limit_gps_log_size_dialog_message"> <xliff:g id="log_type">%s</xliff:g> 的日志容量应该在区间 <xliff:g id="min_size">%d</xliff:g> MB ~ <xliff:g id="max_size">%d</xliff:g> MB.</string>
+    <string name="log_path_title">日志存储路径</string>
+    <string name="log_path_summary">设置日志存储路径</string>
+   
+    
+    <string-array name="log_path_list_preference">
+        <item>MTKLogger 日志路径(MTKLog文件)</item>
+        <item>GPS 初始日志路径(data/misc)</item>
+    </string-array>
+    
+    <string-array name="log_path_value_list_preference">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="default_gps_path_value">1</string>
+    
+    <!-- MobileLog Settings -->
+    <string name="mobilelog_settings">MobileLog设置</string>
+   	<string name="enable_mobilelog">启用MobileLog</string>
+    <string name="enable_android_log_title">Android Log</string>
+    <string name="enable_android_log_summary">启用/禁用android log</string>
+    <string name="enable_kernel_log_title">Kernel Log</string>
+    <string name="enable_kernel_log_summary">启用/禁用kernel log</string>
+    <string name="enable_bluetooth_log_title">Bluetooth Log</string>
+    <string name="enable_bluetooth_log_summary">启用/禁用bluetooth log</string>
+    <string name="enable_atf_log_title">ATF Log</string>
+    <string name="enable_atf_log_summary">启用/禁用ATF Log</string>
+    <string name="enable_bsp_log_title">BSP Log</string>
+    <string name="enable_bsp_log_summary">启用/禁用BSP log</string>
+    <string name="enable_mmedia_log_title">Mmedia Log</string>
+    <string name="enable_mmedia_log_summary">启用/禁用Mmedia log</string>
+    <string name="enable_sspm_log_title">SSPM Log</string>
+    <string name="enable_sspm_log_summary">启用/禁用SSPM log</string>
+    <string name="limit_log_size_title">日志容量(MB)</string>
+    <string name="limit_log_size_summary">当达到日志最大容量时将会删除日志</string>
+    <string name="limit_log_size_dialog_message">
+        <xliff:g id="log_type">%s</xliff:g>的容量应该在区间 
+        <xliff:g id="min_size">%d</xliff:g>MB ~ 
+        <xliff:g id="max_size">%d</xliff:g>MB(
+        <xliff:g id="store_type">%s</xliff:g>的容量).\n 注意：若所有log最大值之和大于内存值，可能出现空间被占满log停止。</string>
+    <string name="limit_log_size_store_type">
+        <xliff:g id="log_type">%s</xliff:g>最大
+        </string>
+    <string name="start_automatically_title">自动启用</string>
+    <string name="start_automatically_mobile_summary">下一次开机时Mobile Log自动启用</string>
+    	<!-- ModemLog Settings -->
+    <string name="modemlog_settings">ModemLog设置</string>
+   	<string name="enable_modemlog">启用ModemLog</string>
+    <string name="log_mode_title">日志模式</string>
+    <string name="log_mode_summary">设置modem log模式</string>
+    <string name="ccb_gear_title">CCB Gear ID(Control+Raw Buffer)</string>
+    <string name="ccb_gear_summary">设置CCB Gear ID</string>
+    <string name="ccb_gear_warning_dialog_title">CCB Gear ID设置警示</string>
+    <string name="ccb_gear_warning_dialog_context">新的设置在手机重新启动后生效！</string>
+    <string name="ccb_gear_warning_dialog_context_more">当设置为gear 3后，Modem Log将不能正常工作！</string>
+    <string name="start_automatically_modem_summary">重启/打开 modem时Modem Log 自动运行</string>
+    <string name="reset_automatically_modem_title">重置Modem自动运行</string>
+    <string name="reset_automatically_modem_summary">发生EE后 Modem自动运行</string>
+    <string name="monitor_modme_abnormal_event_title">监控Modem异常事件</string>
+    <string name="monitor_modme_abnormal_event_summary">Modem异常事件发生时,会自动存储日志到SD卡</string>
+    <string name="save_location_in_log_title">在日志中保存方位信息(仅Md1)</string>
+    <string name="save_location_in_log_summary">启用全球定位系统设备，全球定位系统信号启动后，在modem日志中储存设备调制信息</string>
+    <string name="save_location_in_log_dialog_title">在日志中保存方位信息警示</string>
+    <string name="save_location_in_log_dialog_context">启用此功能将迫使GPS总是打开的。这可能会增加对Android和Modem的功率消耗。\n\n若您在室内使用，或者进行性能测试或者测试功耗，请禁用此功能.</string>
+    	<!-- NetworkLog Settings -->
+    <string name="networklog_settings">NetworkLog设置</string>
+   	<string name="enable_networklog">启用NetworkLog</string>
+    <string name="start_automatically_network_summary">下一次开机时Network Log自动运行</string>
+    <string name="networklog_ping_title">启动环境检测</string>
+    <string name="networklog_ping_summary">停止录制时检查network运行环境请等待.</string>
+    <string name="networklog_limit_package_enabler">启用包容量限制</string>
+    <string name="networklog_limit_package_enabler_summary">检查每个network log包的大小是否符合给定值</string>
+    <string name="networklog_limit_package_size">设置包大小</string>
+    <string name="networklog_limit_package_size_summary">每个包的大小不能超过给定值</string>
+    <string name="networklog_limit_package_size_note">每个包的大小设置区间为 0 ~ 65535.</string>
+    
+    <!-- Clear logs -->
+    	<!-- LogFolderListActivity -->
+    <string name="title_activity_log_folder_list">删除MTKLog文件</string>
+    <string name="cancel_menu">取消</string>
+    <string name="clear_all_menu">全部删除</string>
+    <string name="clear_all_dlg_title">全部删除</string>
+    <string name="message_delete_all_log">确认全部删除?</string>
+    <string name="cancel_button">取消</string>
+    <string name="ok_button">确定</string>
+    <string name="clear_dialog_title">正在删除日志</string>
+    <string name="clear_dialog_content">请耐心等待...</string>
+    	<!-- LogFileListActivity -->
+    <string name="selected_item_count"><xliff:g id="count">%d</xliff:g> 选择</string>
+    <string name="menu_select_all">全选</string>
+    <string name="menu_unselect_all">全不选Unselect all</string>
+    <string name="menu_clear">删除</string>
+    <string name="clear_non_selected_item">请至少选择一个日志文件!</string>
+    <string name="clear_dlg_title">删除</string>
+    <string name="message_deletelog">删除所选文件?</string>
+    
+    <!-- Error handler -->
+    <string name="error_deamon_unable">Native不可用</string>
+    <string name="error_storage_not_ready">存储还未就绪!</string>
+    <string name="error_storage_full">存储空间已满</string>
+    <string name="error_send_cmd_fail">发送命令失败</string>
+    <string name="error_deamon_die">Native 已消亡</string>
+	<string name="error_unsupport_log">不支持日志类型</string>
+	<string name="error_storage_unavailable">日志存储不再可用.</string>
+    <string name="error_log_folder_deleted">当前运行日志文件已不存在.</string>
+    <string name="error_cmd_timeout">命令超时.</string>
+    <string name="error_create_log_folder_fail">创建日志文件失败.</string>
+    <string name="error_wait_sd_timeout">等待存储设备就绪超时.</string>
+    <string name="error_common">错误.</string>
+    <string name="error_tcpdump_failed">Tcpdump 失败</string>
+    <string name="info_wait_sd_ready">等待存储设备就绪...</string>
+    <string name="info_modem_log_in_flight_mode">Modem log未工作在flight模式</string>
+    <!-- METlog information -->
+	 <string name="met_start_failed">MET Log 启动失败.</string>
+    <!-- Tag Log -->
+	<string name="taglog">Tag Log</string>
+	<string name="taglog_title">Tag Log</string>
+	<string name="taglog_title_warning">Tag Log 警告!</string>
+	<string name="taglog_title_no_space">警告：空间不足!</string>
+	<string name="taglog_msg_no_space">Tag还至少需要 <xliff:g id="needspace">%s</xliff:g>MB 额外空间.\n
+	    是否删除一些日志,或取消Taglog?</string>
+	<string name="taglog_msg_input">Tag Log将压缩当前日志文件以节省空间.\n\n请输入tag名称:</string>
+	<string name="taglog_msg_logtool_stopped">所有日志均禁用,是否全部启用？</string>
+    <string name="taglog_msg_zip_log_fail">压缩日志失败!</string>
+    <string name="taglog_msg_no_sdcard">SD卡不存在!</string>
+    <string name="taglog_msg_sdcard_not_writtable"> SD卡不可写!</string>
+    <string name="taglog_msg_compress_log">正在压缩日志文件... </string>
+    <string name="taglog_run_in_background_button">后台运行</string>
+    <string name="taglog_busy">在Taglog期间,将不能处理其他异常信息!</string>
+    <string name="taglog_compress_done">Tag Log压缩日志文件完成!</string>
+    <string name="taglog_exit">Tag Log退出!</string>
+	<string name="taglog_msg_stop_log_fail">在给定时间内未成功停止所有日志录制!</string>
+	
+	<!-- Log Mode -->
+   	<string-array name="mode_list_preference">
+   	    <item>USB 模式</item>
+	    <item>SD 模式</item>
+	    <item>Passive Log to SD 模式</item>
+	</string-array>
+	<string-array name="mode_value_list_preference">
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	</string-array>
+	<string name="default_mode_value">2</string>
+	
+	<string-array name="ccb_gear_list">
+   	    <item>gear 0(默认)</item>
+   	    <item>gear 1(2MB + 20MB)</item>
+   	    <item>gear 2(2MB + 10MB)</item>
+   	    <item>gear 3(0MB + 0MB)</item>
+   	    <item>gear 5(2MB + 6.5MB)</item>
+   	    <item>gear 11(2MB + 2MB)</item>
+	</string-array>
+	<string-array name="ccb_gear_value_list">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>5</item>
+	    <item>11</item>
+	</string-array>
+	<string name="default_ccb_gear_value">0</string>
+	
+	<string-array name="modem_vcom_list_preference">
+	    <item>NONE</item>
+	    <item>VCOM1</item>
+	    <item>VCOM2</item>
+	    
+	</string-array>
+	<string-array name="vcom_value_list_preference">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	</string-array>
+	<!-- For Modem log -->
+	<string name="memorydump_done">dumping memory 已完成!\n点击确定重启modem.\n dump文件为: </string>
+    <string name="dump_warning">Modem Log警告</string>
+    <string name="reset_modem_title">重启Modem</string>
+    <string name="reset_modem_msg">Modem重启...</string>
+    <string name="send_filter_fail_title">Modem Log警告</string>
+    <string name="send_filter_fail_msg">没有找到no catcher_filter.bin文件,请将其放置于/sdcard/mtklog/config</string>
+
+    <!-- Add for debug tool box begin -->
+    <string name="app_debugutils">调试工具</string>
+  
+    <string name="preferences_aee_settings">安卓调试设置</string>
+    <string name="preference_aeemode">AEE工作模式</string>
+    <string name="title_preference_aeemode">调试等级</string>
+    <string name="summary_preference_aeemode">异常操作,db路径,通知</string>
+    <string name="dialog_title_list_preference_aeemode">设置调试等级</string>
+    
+    <string name="preference_dal_setting">DAL设置</string>
+    <string name="title_preference_dal_setting">DAL设置</string>
+    <string name="summary_preference_dal_setting">是否红屏</string>
+    <string name="dialog_title_list_preference_dal_setting">DAL设置选项</string>
+  
+    <string name="preference_cleardal">清除DAL</string>
+    <string name="summary_preference_cleardal">清除红屏警告</string>
+    <string name="title_preference_cleardal">清除红屏</string>
+
+    <string name="title_preferences_device_maintain">设备维护</string>
+    <string name="preferences_device_maintain">设备维护</string>
+    <string name="preference_cleandata">清除设备</string>
+    <string name="summary_preference_cleandata">删除/data 分区</string>
+    <string name="title_preference_cleandata">清除设备</string>
+    
+    <string name="modem_vcom_map">USB 端口设置</string>
+    
+    <!-- Add for debug tool box end -->
+  
+    <!-- Exception Reporter General -->
+    <string name="exception_app_name">异常报告</string>
+    <string name="log2server_dialog_title">异常报告</string>
+    <string name="log2server_dialog_message">很遗憾,发生异常程序已停止.\n将异常信息发送给MediaTek服务器?</string>
+	<string name="log2server_btn_report">是</string>
+	<string name="log2server_btn_cancel">否</string>
+	<string name="feedback">Feedback</string>
+	<string name="feedback_hint">请描述在异常发生前一刻您的操作步骤</string>
+	<string name="submitter">提交</string>
+	<string name="submitter_tip">请输入提交人信息.</string>
+	<string name="submitter_hint">工号/名字</string>
+	<string name="error_tip">发送报告失败!</string>
+	<string name="process_name">进程名</string>
+	<string name="build_version">编译版本</string>
+	<string name="exception_class">异常分类</string>
+	<string name="exception_level">异常等级</string>
+	<string name="wifi_username">用户名</string>
+	<string name="exception_type">异常类型</string>
+	<string name="device_name">设备名</string>
+	<string name="date_time">日期</string>
+	<string name="success_tip">发送报告成功!</string>
+	<string name="log2server_dialog_switch">请不要再提问.</string>
+	<string name="log2server_send_progress_tip">发送中,请等待...</string>
+	<string name="no_network_tip">网络未连接,是否立即设置?</string>
+	<string name="dialog_send_cost_tip">网络已连接,但不是WiFi.是否将已保存的异常日志文件(大小为 %s) 发送至MediaTek 服务器,那将会非常耗时</string>
+	<string name="dialog_send_tip">网络已连接,但不是WiFi.是否将已保存的异常日志文件(大小为 %s) 发送至MediaTek 服务器?</string>
+	<string name="btn_later">稍后发送</string>
+	<string name="btn_giveup">取消</string>
+	<string name="network_gprs_tip">网络连接不是WiFi.发送将会更耗时,是否继续?</string>
+	
+    <string name="logs">补充日志</string>
+    <string name="mobile_log">MobileLog</string>
+    <string name="modem_log">ModemLog</string>
+    <string name="net_log">NetLog</string>
+    <string name="exp_db">Exception DB</string>
+    <string name="cancel">取消</string>
+    <string name="send">发送</string>
+    <string name="basic_info">基本信息</string>
+    <string name="dialog_msg_manual_dump">手动dump已完成. 是否将其发送至MediaTek服务器?</string>
+    <string name="pref_key_exception_db">exception_db</string>
+    <string name="pref_key_process_name">process_name</string>
+    <string name="pref_key_exception_class">exception_class</string>
+    <string name="pref_key_exception_level">exception_level</string>
+    <string name="pref_key_exception_type">exception_type</string>
+    <string name="pref_key_build_version">build_version</string>
+    <string name="pref_key_device_name">device_name</string>
+    <string name="pref_key_date_time">date_time</string> 
+    <string name="chk_key_mobile_log">chk_mobile_log</string> 
+    <string name="chk_key_net_log">chk_net_log</string>
+    <string name="chk_key_modem_log">chk_modem_log</string> 
+    <string name="size">Size:%s</string>
+    
+    <string name="status">status</string>
+    <string name="pref_key_log_id">log_id</string>
+    <string name="pref_key_cr_id">cr_id</string>
+    <string name="pref_key_upload_status">upload_status</string>
+    <string name="status_uploaded">Uploaded</string>
+    <string name="status_not_uploaded">Not uploaded</string>
+    <string name="pref_key_upload_time">upload_time</string>
+    <string name="pref_key_mobile_log">mobile_log</string>
+    <string name="pref_key_modem_log">modem_log</string>
+    <string name="pref_key_network_log">network_log</string>
+    <string name="log_id">Log ID</string>
+    <string name="cr_id">CR ID</string>
+    <string name="msg_no_cr_id">No CR ID</string>
+    <string name="upload_status">Upload status</string>
+    <string name="upload_time">Upload time</string>
+    
+    <string name="ok">确定</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    
+    <!-- -report history -->
+    <string name="histroy_label">异常报告历史</string>
+    <string name="empty_msg">没有历史信息</string>
+    <string name="clear_history">清除历史信息</string>
+    <string name="clear_confirm">清除?</string>
+    <string name="set_limit_desc">设置保存历史信息的个数</string>
+    <string name="set_history_limit">设置历史信息极值</string>
+    <string name="history_limit">历史极限</string>
+    <string name="clear_msg">历史将被清除.</string>
+    <string name="exit">返回</string>
+    <string name="delete">删除</string>
+    <string name="clear_btn">清除</string>
+    <string name="set">设置</string>
+    <string name="pref_category_key_logs">pref_category_key_logs</string>
+    <string name="view_history">View history</string>
+    <string name="success_message_with_logid">\nLog ID = %s.</string>
+    <string name="success_message_with_crid">\nCR ID = %s.</string>
+    <string name="app_history_name">异常历史</string>
+    <string name="history_menu">更多</string>
+    
+    <!-- Add for TagLog notification -->
+    <string name="notification_title_taglog_compressing">日志压缩进行中</string>
+    <string name="notification_title_taglog_compress_success">压缩成功</string>
+    <string name="notification_summary_taglog_compress_success">压缩日志成功</string>
+    <string name="notification_title_taglog_compress_fail">压缩失败</string>
+    <string name="notification_title_reporting_exception">录制异常</string>
+    <string name="notification_summary_reporting_sucess">成功录制异常</string>
+    <string name="notification_summary_reporting_fail">录制异常失败</string>
+    <string name="notification_summary_reporting_wait">taglog压缩进行中,请等待...</string>
+    <string name="clear_all_title">清除全部</string>
+    <string name="clear_all_msg">异常报告将被全部删除.</string>
+    <string name="limit_10">10</string>
+    <string name="limit_20">20</string>
+    <string name="limit_30">30</string>
+    <string name="limit_40">40</string>
+    <string name="limit_50">50</string>
+    <string name="issue_submitter_app_name">提交异常</string>
+    <string name="title_role_select_window">提交异常</string>
+    <string name="title_activity_main">提交异常</string>
+    <string name="title_activity_qapage">测试页</string>
+    <string name="title_activity_nonqapage">开发/超级用户页</string>
+    <string name="title_activity_ertpage">异常诊断</string>
+    <string name="title_activity_assignee_search">分派</string>
+    
+    <string name="btn_trigger_is">提交异常跟踪</string>
+    <string name="btn_trigger_float">弹出浮动按钮</string>
+    <string name="btn_remove_float">移除浮动按钮</string>
+    <string name="btn_sync_info">同步服务器信息</string>
+    <string name="capture_screen_btn_label">截屏</string>
+    <string name="upload_screen_btn_label">上传截屏</string>
+    
+    <string name="action_btn_submit_later">稍后提交</string>
+    <string name="action_btn_save">保存</string>
+    <string name="action_btn_cancel">取消</string>
+    <string name="action_btn_submit">提交</string>
+    <string name="action_btn_ok">确定</string>
+    
+    <!-- Add for initialization process -->
+    <string name="server_info_not_sync">请同步服务器的基本信息.</string>
+    <string name="server_info_sync_done">问题提交服务器信息同步完成.</string>
+    <string name="server_info_sync_fail">问题提交服务器信息同步失败,请确保网络连接重试.若扔失败请联系Guoyi.Qu开启外部服务器</string>
+    <string name="server_info_external_server_fail">问题提交服务器连接失败,请联系Guoyi.Qu开启外部服务器.</string>
+    <string name="server_info_network_fail">请开启WiFi并检查是否稳定重试连接,若扔失败请联系Guoyi.Qu开启外部服务.</string>
+    <string name="is_service_bind_fail">异常服务器不支持当前项目.</string>
+    <string name="server_info_sync_unknown">问题提交服务同步时发生未知错误.</string>
+    
+    <!-- Add for login page begin -->
+    <string name="title_activity_login">登录页</string>
+    <string name="title_dialog_login">请登录</string>
+    <string name="login_dialog_label_username">用户名</string>
+    <string name="login_dialog_label_password">密码</string>
+    <string name="login_page_hint_username">请输入CQ账户</string>
+    <string name="login_page_hint_pwd">请输入CQ密码</string>
+    <string name="login_page_btn_login">登录</string>
+    <string name="login_page_msg_remember">保存登录信息</string>
+    <string name="login_page_msg_show_pwd">显示密码</string>
+    <string name="login_page_msg_empty_account">CQ账户不能为空</string>
+    <string name="login_page_msg_empty_password">CQ密码不能为空</string>
+    
+    <string name="error_login_fail">登录失败.</string>
+    <string name="error_login_fail_no_response">登录失败,服务器无响应.请联系Yuru.Zhu开启服务</string>
+    <string name="error_login_fail_pwd">登录失败,用户名或密码错误.</string>
+    <string name="error_login_fail_net">登录失败,无网络可用.</string>
+    <string name="error_login_expired">登录已超时，请重新登录.</string>
+    <!-- Add for login page end -->
+    
+    <!-- QA edit info page begin -->
+    <string name="info_edit_submitter_label">提交者</string>
+    <string name="info_edit_submitter_hint">部门/姓名</string>
+    <string name="info_edit_assignee_label">分派</string>
+    <string name="info_edit_assignee_hint">选择受理人</string>
+    <string name="info_edit_assignee_selector_desc">选择负责人</string>
+    <string name="info_edit_title_label">标题</string>
+    
+    <string name="info_edit_project_label">项目</string>
+    <string name="info_edit_feature_category_label">功能类型</string>
+    <string name="info_edit_feature_name_label">功能名称</string>
+    <string name="info_edit_priority_label">优先级</string>
+    <string name="info_edit_repeat_ratio_label">复现频率</string>
+    <string name="info_edit_repeat_steps_label">复现步骤</string>
+    <string name="info_edit_screenshot_label">附加快照</string>
+    <string name="info_edit_sw_version_label">版本</string>
+    <string name="info_edit_platform_label">平台</string>
+    <string name="info_edit_description_label">描述</string>
+    <string name="info_edit_process_label">进度</string>
+    <string name="info_edit_attachment_label">附件</string>
+    <string name="info_edit_attachment_mblog_label">手机日志</string>
+    <string name="info_edit_attachment_mblog_value">未知</string>
+    <string name="info_edit_attachment_aee_label">异常数据库</string>
+    <string name="info_edit_attachment_aee_value">未知</string>
+    <string name="info_edit_attachment_mdlog_label">ModemLog</string>
+    <string name="info_edit_attachment_mdlog_value">未知</string>
+    <string name="info_edit_attachment_netlog_label">NetworkLog</string>
+    <string name="info_edit_attachment_netlog_value">未知</string>
+    
+    <string name="info_edit_basic_group_label">更多信息</string>
+    <!-- QA edit info page end -->
+
+    <!-- Submit issue fail begin -->
+    <string name="ftp_upload_error">上传日之后失败.请检查WiFi后重试. 若扔失败请联系Guoyi.Qu检查FTP服务器.</string>
+    <string name="submit_cr_to_server_fail">提交CR到Web服务器失败! 请检查WiFi后重试.</string>
+    <string name="query_cr_from_server_fail">在Web服务器上查询CR失败fail! 请检查WiFi后重试.</string>
+    <string name="submit_cr_error">提交CR失败!</string>
+	<string name="internal_server_timeout">内部服务器超时,请联系Yuru.Zhu开始内部服务器.</string>
+    
+    
+    <!-- Assignee selector page begin -->
+    <string name="enable_auto_find_owner_hint">分派人为空时会从MOF中自动查找</string>
+    <string name="info_edit_search_btn_label">查询</string>
+    <string name="label_assignee_search_keyword">关键字</string>
+    <string name="label_assignee_search_results">匹配结果</string>
+    <string name="error_assignee_search_results_fail">请输入查询关键字，点击"查询"按钮.然后在结果中选择负责人.</string>
+    <!-- Assignee selector page end -->
+    
+    <!-- Progress indicator dialog -->
+    <string name="indicator_label_compress">正在压缩日志\u2026  </string>
+    <string name="indicator_label_upload">正在上传日志\u2026 </string>
+    <string name="indicator_label_generate_cr">正在生成CR </string>
+    <string name="indicator_dialog_title">进度指示</string>
+    <string name="indicator_dialog_btn_positive_ongoing">后台运行</string>
+    <string name="indicator_dialog_btn_positive_done">完成</string>
+    <string name="indicator_label_cr_id">\u2026</string>
+    <string name="is_setting_open_tool">正在开启问题提交工具,请不要退出.</string>
+    <string name="is_wait_for_taglog">正在进行TagLog,请不要退出.</string>
+    
+    
+    <!-- For settings page begin -->
+    <string name="user_role_label_qa">高级用户(测试)</string>
+    <string name="user_role_label_common">普通用户</string>
+    <string name="btn_qa_role_logout">退出</string>
+    <string name="title_activity_settings">IS设置</string>
+    
+    <!-- For history page begin -->
+    <string name="btn_delete">删除</string>
+    <string name="title_activity_history">问题提交记录</string>
+    <string name="is_history_title">问题提交记录</string>
+    <string name="title_activity_history_editor">编辑记录</string>
+    <string name="is_history_summary">请点击检查按钮并编辑问题提交记录</string>
+    <string name="is_history_menu_select_all">全选</string>
+    <string name="is_history_menu_unselect_all">取消全选</string>
+    <string name="is_history_selected_suffix">勾选</string>
+    <string name="is_history_delete_confirm_dialog_title">删除</string>
+    <string name="is_history_delete_confirm_dialog_message">删除选择的记录?</string>
+    <string name="is_history_delete_confirm_dialog_btn_delete">删除</string>
+    <string name="is_history_delete_confirm_dialog_btn_cancel">取消</string>
+    
+    <!-- For information message begin -->
+    <string name="msg_is_service_open_fisrt">请先点击问题提交按钮来同步问题提交服务器数据.</string>
+    <string name="msg_wifi_not_available">Wifi不可用.请先开启并连接vilid WLAN.</string>
+    <string name="title_no_log_selected">警告</string>
+    <string name="msg_no_log_selected">没有选择日志,确认提交异常而不携带任何日志?</string>
+    <string name="dialog_btn_yes">是</string>
+    <string name="dialog_btn_no">否</string>
+    
+    <!-- Add for temp test begin -->
+    <string name="is_switch_title">问题提交</string>
+    <string name="is_switch_summary">点击更多配置信息</string>
+    <string name="hello_world">MTKLogger</string>
+    <string name="test_hint_username">用户名</string>
+    <string name="test_hint_pwd">密码</string>
+    <string name="test_hint_login">登录</string>
+    <string name="test_label_stress_test">压力测试标签</string>
+    <string name="test_label_stress_test_count">压力测试个数</string>
+    <string name="test_btn_qa_test">QA测试</string>
+    <string name="test_btn_common_test">普通测试</string>
+    <string name="test_btn_stop_test">停止测试</string>
+    <string name="title_no_wifi_connection">WiFi未连接</string>
+    <string name="msg_no_wifi_connection">只有在Wi-Fi连接时才能提交异常,是否开始设置?</string>
+    <string name="action_setting_wifi">设置WiFi</string>
+    <string name="msg_compress_log">等待压缩日志</string>
+    <string name="msg_upload_log">上传日志到服务器</string>
+    <string name="msg_submit_cr">提交CR</string>
+    <string name="msg_report_cr_to_server">提交问题信息至服务器</string>
+    <string name="msg_wait_for_cr_result">请等待,服务器返回提交问题结果</string>
+    <string name="msg_submit_cr_ok">提交CR成功</string>
+    <string name="msg_submit_cr_fail">提交CR失败</string>
+    <string name="msg_feature_name_expired">功能名称已失效.是否自动更新?</string>
+    <string name="msg_feature_category_expired">功能分类已失效.是否自动更新?</string>
+    <string name="dialog_bt_ok">是</string>
+    <string name="switch_bt_on">否</string>
+    <string name="switch_bt_off">关闭</string>
+    <string name="msg_confirm_logout">是否退出?</string>
+    <string name="msg_is_press_exit">问题提交工具将会退出!</string>
+    
+</resources>
